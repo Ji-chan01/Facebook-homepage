@@ -1,0 +1,25 @@
+body {
+  height: 877.297px;
+}
+
+h2, a {
+  font-family: arial;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  row-gap: 5px;
+}
+
+.ul-link {
+  color: rgb(128, 128, 128);
+  font-size: 11px;
+  display: block;
+}

@@ -1,0 +1,216 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  background-color: rgb(242, 244, 247);
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 100px;
+  height: 420px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.fb-logo-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 10px;
+  max-width: 400px;
+}
+
+.facebook-logo {
+  width: 300px;
+  margin-left: -28px;
+}
+
+.login-div {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 310px;
+  width: 330px;
+  flex-shrink: 0;
+  border: 1px solid rgba(151, 151, 151, 0.15);
+  border-radius: 2%;
+  box-shadow: 1px 1px 10px rgba(82, 82, 82, 0.35);
+  background-color: white;
+  padding: 15px;
+}
+
+.wrap-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+  width: 90%;
+}
+
+.input {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(200,200,200);
+  font-size: 16px;
+  font-family: arial;
+  width: 100%;
+}
+
+.login-btn {
+  width: 110%;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(8, 102, 255);
+  color: white;
+  font-size: 20px;
+  font-weight: 550;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.forgot-password {
+  color: rgb(8, 102, 255);
+  font-size: 14px;
+}
+
+.separator {
+  border-bottom: 1px solid rgb(218, 221, 225);
+  width: 110%;
+  margin: 10px 0;
+}
+
+.create-account {
+  background-color: rgb(66, 183, 42);
+  height: 48px;
+  color: white;
+  font-weight: 550;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 5px 15px;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+.create-page-texts {
+  font-family: arial;
+  position: absolute;
+  font-size: 14px;
+  bottom: -60px;
+}
+
+.create-page {
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 900px;
+  box-sizing: border-box;
+  margin: 25px;
+}
+
+.language-lists {
+  padding: 0;
+  margin: 0;
+  column-gap: 10px;
+}
+
+.language-separator {
+  border-bottom: 1px solid rgb(218, 221, 225);
+  width: 100%;
+  margin: 8px 0;
+}
+
+.additional-settings {
+  margin: 0;
+  padding: 0;
+  column-gap: 20px;
+}
+
+.copyright {
+  margin-top: 25px;
+  color: rgb(128, 128, 128);
+  font-size: 10px;
+}
+
+
+/* Hover effects */
+.login-btn:hover {
+  background-color: rgb(33, 118, 255);
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.create-account:hover {
+  background-color: rgb(52, 156, 31);
+}
+
+.create-page:hover {
+  text-decoration: underline;
+}
+
+.input:focus {
+  outline: 1px solid rgb(8, 102, 255);
+  border: none;
+  box-shadow: 1px 1px 1px 4px rgba(109, 165, 255, 0.15);
+}
+
+@media (max-width: 1074.44px) {
+  h2 {
+    font-size: 23px;
+    width: 330px;
+  }
+
+  .center-div {
+    column-gap: 50px;
+  }
+}
+
+@media (max-width: 810px) {
+  .container {
+    display: block;
+  }
+
+  .center-div {
+    text-align: center;
+    height: 520px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .fb-logo-text {
+    margin-top: 0;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+}
